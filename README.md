@@ -4,17 +4,17 @@
 ## Запуск проекта
 
 ```Bash
-
 Контейнер без запуска тестов
--------git clone https://github.com/Korotaevam/ylab_2.git
----------cd ylab_2
-----------docker-compose up
+git clone https://github.com/Korotaevam/ylab_2.git
+cd ylab_2
+docker-compose up -d
 
 Контейнер с запуском тестов
--------git clone https://github.com/Korotaevam/ylab_2.git
----------cd ylab_2
-----------docker-compose-autotest up
+git clone https://github.com/Korotaevam/ylab_2.git
+cd ylab_2
+docker-compose -f docker-compose-test.yml up
 
+-d не писать! иначе не видно как прогоняются тесты
 ```
 
 ## Задание
